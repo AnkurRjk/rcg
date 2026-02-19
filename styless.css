@@ -1,3 +1,39 @@
-*{
-    background-color: white;
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 300px;
+    margin: 0px;
+}
+
+button{
+
+    border: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-shadow: 10px 9px 16px 5px rgba(0 , 0, 0, 0.5);
+    
+    transition-duration: 0.2;
+
+
+}
+
+button:hover{
+    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+
+h1,
+button,
+p {
+  font-family: "Open Sans", sans-serif;
+  
+}
+
+.rgb-values{
+    margin-top: 25px;
 }

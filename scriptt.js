@@ -11,12 +11,22 @@ const genNewRGBColors = () => {
 
     const rgb = "rgb(" + r + "," + g + "," + b + ")";
     changeBackgroundColor(rgb);
+    changeBackgroundDescription(rgb);
 };
 
 const changeBackgroundColor = (rgb) => {
     document.querySelector("body").style.backgroundColor = rgb;
 };
 
+const updateRGBDescription  = (rgb) => {
+    document.querySelector("rgb-values").iinerHTML = rgb;
+}
+
 const button = document
     .querySelector("button")
     .addEventListener("click", genNewRGBColors);
+
+
+document.addEventListener("DOMContentLoaded", genNewRGBColors)
+
+
